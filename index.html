@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axenatorz — My Personal Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="logo">·My<span>Personal</span>Website·</a>
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <!-- Hamburger (mobile only) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- MOBILE NAV DRAWER -->
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="mobile-cta">Hire Me</a>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-greeting">Hello! Welcome to my Personal Website</p>
+          <h1 class="hero-name">Hi! I'm<br />Axenatorz</h1>
+          <div class="hero-role-line">
+            <span class="role-prefix">I am a</span>
+            <span class="role-text" id="typed"></span
+            ><span class="role-cursor"></span>
+          </div>
+          <p class="hero-desc">
+            Passionate graphic designer &amp; web developer crafting clean,
+            impactful digital experiences. I turn ideas into beautiful visual
+            stories.
+          </p>
+          <div class="hero-btns">
+            <a href="#about" class="btn-dark">Read More</a>
+            <a href="#contact" class="btn-light">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-photo-area">
+          <div class="hero-photo-bg">
+            <svg
+              class="hero-svg"
+              viewBox="0 0 360 450"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="360" height="450" fill="#f3f3f3" />
+              <pattern
+                id="dots"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <circle cx="1" cy="1" r="1" fill="#e0e0e0" />
+              </pattern>
+              <rect width="360" height="450" fill="url(#dots)" />
+              <path
+                d="M50 450 Q50 350 110 328 L118 368 L180 348 L242 368 L250 328 Q310 350 310 450Z"
+                fill="#2d2d2d"
+              />
+              <path
+                d="M155 328 L180 350 L205 328 L196 312 Q180 322 164 312Z"
+                fill="#f0eeeb"
+              />
+              <rect
+                x="164"
+                y="270"
+                width="32"
+                height="52"
+                rx="7"
+                fill="#c8a882"
+              />
+              <ellipse cx="180" cy="228" rx="74" ry="80" fill="#c8a882" />
+              <ellipse cx="180" cy="165" rx="80" ry="48" fill="#2d2d2d" />
+              <rect x="100" y="165" width="160" height="30" fill="#2d2d2d" />
+              <rect
+                x="102"
+                y="188"
+                width="156"
+                height="14"
+                rx="3"
+                fill="#3d3d3d"
+              />
+              <circle cx="180" cy="143" r="11" fill="#e63e2b" />
+              <path
+                d="M148 218 Q158 212 170 216"
+                stroke="#5a3a1a"
+                stroke-width="2.5"
+                fill="none"
+                stroke-linecap="round"
+              />
+              <path
+                d="M190 216 Q202 212 212 218"
+                stroke="#5a3a1a"
+                stroke-width="2.5"
+                fill="none"
+                stroke-linecap="round"
+              />
+              <ellipse cx="159" cy="230" rx="11" ry="9" fill="#fff" />
+              <ellipse cx="201" cy="230" rx="11" ry="9" fill="#fff" />
+              <circle cx="160" cy="230" r="5.5" fill="#2d2d2d" />
+              <circle cx="202" cy="230" r="5.5" fill="#2d2d2d" />
+              <circle cx="162" cy="228" r="2" fill="#fff" />
+              <circle cx="204" cy="228" r="2" fill="#fff" />
+              <path
+                d="M180 242 Q174 256 168 261 Q180 265 192 261 Q186 256 180 242Z"
+                fill="#b07840"
+              />
+              <ellipse cx="180" cy="280" rx="50" ry="26" fill="#2d2d2d" />
+              <path
+                d="M150 268 Q180 288 210 268"
+                stroke="#555"
+                stroke-width="2.5"
+                fill="none"
+                stroke-linecap="round"
+              />
+              <circle cx="144" cy="258" r="14" fill="#e8a070" opacity="0.2" />
+              <circle cx="216" cy="258" r="14" fill="#e8a070" opacity="0.2" />
+              <ellipse cx="106" cy="234" rx="13" ry="17" fill="#c8a882" />
+              <ellipse cx="254" cy="234" rx="13" ry="17" fill="#c8a882" />
+            </svg>
+            <div class="hero-badge">
+              <div class="hero-badge-num">6+</div>
+              <div class="hero-badge-txt">Years of<br />Experience</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-img-wrap reveal">
+            <div class="about-img-box">
+              <svg
+                viewBox="0 0 320 440"
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 100%; height: 100%; display: block"
+              >
+                <rect width="320" height="440" fill="#f3f3f3" />
+                <pattern
+                  id="dots2"
+                  x="0"
+                  y="0"
+                  width="18"
+                  height="18"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <circle cx="1" cy="1" r="1" fill="#e0e0e0" />
+                </pattern>
+                <rect width="320" height="440" fill="url(#dots2)" />
+                <path
+                  d="M30 440 Q30 345 90 322 L98 362 L160 342 L222 362 L230 322 Q290 345 290 440Z"
+                  fill="#2d2d2d"
+                />
+                <path
+                  d="M136 322 L160 344 L184 322 L175 306 Q160 316 145 306Z"
+                  fill="#f0eeeb"
+                />
+                <rect
+                  x="146"
+                  y="265"
+                  width="28"
+                  height="48"
+                  rx="6"
+                  fill="#c8a882"
+                />
+                <ellipse cx="160" cy="220" rx="70" ry="76" fill="#c8a882" />
+                <ellipse cx="160" cy="158" rx="76" ry="46" fill="#2d2d2d" />
+                <rect x="84" y="158" width="152" height="28" fill="#2d2d2d" />
+                <rect
+                  x="86"
+                  y="180"
+                  width="148"
+                  height="14"
+                  rx="3"
+                  fill="#3d3d3d"
+                />
+                <circle cx="160" cy="136" r="10" fill="#e63e2b" />
+                <path
+                  d="M130 212 Q140 206 152 210"
+                  stroke="#5a3a1a"
+                  stroke-width="2.5"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M168 210 Q180 206 190 212"
+                  stroke="#5a3a1a"
+                  stroke-width="2.5"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+                <ellipse cx="140" cy="223" rx="10" ry="8" fill="#fff" />
+                <ellipse cx="180" cy="223" rx="10" ry="8" fill="#fff" />
+                <circle cx="141" cy="223" r="5" fill="#2d2d2d" />
+                <circle cx="181" cy="223" r="5" fill="#2d2d2d" />
+                <circle cx="143" cy="221" r="2" fill="#fff" />
+                <circle cx="183" cy="221" r="2" fill="#fff" />
+                <path
+                  d="M160 234 Q154 247 148 252 Q160 256 172 252 Q166 247 160 234Z"
+                  fill="#b07840"
+                />
+                <ellipse cx="160" cy="272" rx="46" ry="23" fill="#2d2d2d" />
+                <path
+                  d="M132 261 Q160 280 188 261"
+                  stroke="#555"
+                  stroke-width="2.5"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+                <ellipse cx="90" cy="226" rx="12" ry="16" fill="#c8a882" />
+                <ellipse cx="230" cy="226" rx="12" ry="16" fill="#c8a882" />
+              </svg>
+            </div>
+            <div class="skills-card">
+              <div class="skills-card-title">My Skills</div>
+              <div class="mini-skill">
+                <div class="mini-skill-name">WordPress CMS</div>
+                <div class="mini-bar">
+                  <div class="mini-fill" data-w="90"></div>
+                </div>
+              </div>
+              <div class="mini-skill">
+                <div class="mini-skill-name">HTML / CSS</div>
+                <div class="mini-bar">
+                  <div class="mini-fill" data-w="95"></div>
+                </div>
+              </div>
+              <div class="mini-skill">
+                <div class="mini-skill-name">Figma / UI</div>
+                <div class="mini-bar">
+                  <div class="mini-fill" data-w="85"></div>
+                </div>
+              </div>
+              <div class="mini-skill">
+                <div class="mini-skill-name">Illustrator</div>
+                <div class="mini-bar">
+                  <div class="mini-fill" data-w="88"></div>
+                </div>
+              </div>
+              <div class="mini-skill">
+                <div class="mini-skill-name">Photoshop</div>
+                <div class="mini-bar">
+                  <div class="mini-fill" data-w="93"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal" style="transition-delay: 0.15s">
+            <div class="section-label">About Me</div>
+            <h2 class="sec-title">
+              I'm Axenatorz,<br />Web Designer &amp; Developer
+            </h2>
+            <p class="about-body">
+              Passionate about creating beautiful and functional digital
+              experience. I combine technical expertise with a keen eye design
+              to deliver a website that truly stands out.
+            </p>
+            <p class="about-body">
+              With a background in print and digital, I help businesses
+              communicate their stories effectively — whether through a
+              pixel-perfect, eye-catching or memorable websites campaign.
+            </p>
+            <div class="about-stats">
+              <div class="a-stat">
+                <div class="a-stat-num">6+</div>
+                <div class="a-stat-label">Years Exp.</div>
+              </div>
+              <div class="a-stat">
+                <div class="a-stat-num">120</div>
+                <div class="a-stat-label">Projects</div>
+              </div>
+              <div class="a-stat">
+                <div class="a-stat-num">48</div>
+                <div class="a-stat-label">Clients</div>
+              </div>
+            </div>
+            <div style="display: flex; gap: 14px; flex-wrap: wrap">
+              <a href="#portfolio" class="btn-dark">My Portfolio</a>
+              <a href="#contact" class="btn-light">Hire Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="port-header reveal">
+          <div>
+            <div class="section-label">Portfolio</div>
+            <h2 class="sec-title">Featured Work</h2>
+          </div>
+          <a href="#" class="btn-light">View All →</a>
+        </div>
+        <div class="port-grid reveal" style="transition-delay: 0.1s">
+          <div class="port-card">
+            <div class="port-thumb">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="300" fill="#f0efeb" />
+                <rect
+                  x="30"
+                  y="30"
+                  width="340"
+                  height="240"
+                  rx="3"
+                  fill="#fff"
+                  stroke="#e0e0e0"
+                  stroke-width="1"
+                />
+                <rect
+                  x="50"
+                  y="50"
+                  width="130"
+                  height="90"
+                  rx="2"
+                  fill="#e8e8e8"
+                />
+                <rect
+                  x="200"
+                  y="55"
+                  width="150"
+                  height="18"
+                  rx="2"
+                  fill="#e0e0e0"
+                />
+                <rect
+                  x="200"
+                  y="82"
+                  width="110"
+                  height="12"
+                  rx="2"
+                  fill="#eee"
+                />
+                <rect
+                  x="200"
+                  y="102"
+                  width="130"
+                  height="12"
+                  rx="2"
+                  fill="#eee"
+                />
+                <rect
+                  x="50"
+                  y="158"
+                  width="300"
+                  height="10"
+                  rx="2"
+                  fill="#eee"
+                />
+                <rect
+                  x="50"
+                  y="176"
+                  width="260"
+                  height="10"
+                  rx="2"
+                  fill="#eee"
+                />
+                <rect
+                  x="50"
+                  y="196"
+                  width="80"
+                  height="26"
+                  rx="2"
+                  fill="#2d2d2d"
+                />
+              </svg>
+              <div class="port-overlay">
+                <div class="port-ov-cat">UI Design</div>
+                <div class="port-ov-title">Brand Identity<br />Redesign</div>
+              </div>
+            </div>
+            <div class="port-meta">
+              <div class="port-meta-cat">UI Design</div>
+              <div class="port-meta-title">Brand Identity Redesign</div>
+            </div>
+          </div>
+          <div class="port-card">
+            <div class="port-thumb">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="300" fill="#f5f5f5" />
+                <circle
+                  cx="200"
+                  cy="150"
+                  r="110"
+                  fill="none"
+                  stroke="#e0e0e0"
+                  stroke-width="1"
+                />
+                <circle
+                  cx="200"
+                  cy="150"
+                  r="80"
+                  fill="none"
+                  stroke="#e8e8e8"
+                  stroke-width="1"
+                />
+                <circle cx="200" cy="150" r="50" fill="#2d2d2d" />
+                <circle cx="200" cy="150" r="28" fill="white" />
+                <circle cx="200" cy="150" r="10" fill="#e63e2b" />
+                <line
+                  x1="200"
+                  y1="40"
+                  x2="200"
+                  y2="260"
+                  stroke="#e0e0e0"
+                  stroke-width="1"
+                />
+                <line
+                  x1="90"
+                  y1="150"
+                  x2="310"
+                  y2="150"
+                  stroke="#e0e0e0"
+                  stroke-width="1"
+                />
+              </svg>
+              <div class="port-overlay">
+                <div class="port-ov-cat">Graphic Design</div>
+                <div class="port-ov-title">Logo &amp; Motion<br />Graphics</div>
+              </div>
+            </div>
+            <div class="port-meta">
+              <div class="port-meta-cat">Graphic Design</div>
+              <div class="port-meta-title">Logo &amp; Motion Graphics</div>
+            </div>
+          </div>
+          <div class="port-card">
+            <div class="port-thumb">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="300" fill="#f0f0f0" />
+                <rect
+                  x="20"
+                  y="20"
+                  width="360"
+                  height="260"
+                  rx="6"
+                  fill="white"
+                  stroke="#e8e8e8"
+                  stroke-width="1"
+                />
+                <rect
+                  x="20"
+                  y="20"
+                  width="360"
+                  height="46"
+                  rx="6"
+                  fill="#f8f8f8"
+                />
+                <circle cx="50" cy="43" r="8" fill="#e63e2b" />
+                <circle cx="72" cy="43" r="8" fill="#e0e0e0" />
+                <circle cx="94" cy="43" r="8" fill="#e0e0e0" />
+                <rect
+                  x="38"
+                  y="82"
+                  width="150"
+                  height="110"
+                  rx="3"
+                  fill="#f0f0f0"
+                />
+                <rect
+                  x="204"
+                  y="82"
+                  width="160"
+                  height="24"
+                  rx="2"
+                  fill="#f0f0f0"
+                />
+                <rect
+                  x="204"
+                  y="114"
+                  width="120"
+                  height="14"
+                  rx="2"
+                  fill="#f5f5f5"
+                />
+                <rect
+                  x="204"
+                  y="162"
+                  width="76"
+                  height="26"
+                  rx="2"
+                  fill="#2d2d2d"
+                />
+              </svg>
+              <div class="port-overlay">
+                <div class="port-ov-cat">Web Design</div>
+                <div class="port-ov-title">SaaS Dashboard<br />Interface</div>
+              </div>
+            </div>
+            <div class="port-meta">
+              <div class="port-meta-cat">Web Design</div>
+              <div class="port-meta-title">SaaS Dashboard Interface</div>
+            </div>
+          </div>
+          <div class="port-card">
+            <div class="port-thumb">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="300" fill="#f8f7f4" />
+                <rect
+                  x="20"
+                  y="20"
+                  width="172"
+                  height="260"
+                  rx="3"
+                  fill="white"
+                  stroke="#e8e8e8"
+                  stroke-width="1"
+                />
+                <rect
+                  x="208"
+                  y="20"
+                  width="172"
+                  height="124"
+                  rx="3"
+                  fill="white"
+                  stroke="#e8e8e8"
+                  stroke-width="1"
+                />
+                <rect
+                  x="208"
+                  y="156"
+                  width="172"
+                  height="124"
+                  rx="3"
+                  fill="white"
+                  stroke="#e8e8e8"
+                  stroke-width="1"
+                />
+                <rect
+                  x="34"
+                  y="36"
+                  width="144"
+                  height="80"
+                  rx="2"
+                  fill="#f0eeeb"
+                />
+                <rect
+                  x="34"
+                  y="128"
+                  width="80"
+                  height="10"
+                  rx="2"
+                  fill="#e8e8e8"
+                />
+                <rect
+                  x="34"
+                  y="146"
+                  width="120"
+                  height="10"
+                  rx="2"
+                  fill="#f0f0f0"
+                />
+                <rect
+                  x="34"
+                  y="164"
+                  width="60"
+                  height="22"
+                  rx="2"
+                  fill="#2d2d2d"
+                />
+              </svg>
+              <div class="port-overlay">
+                <div class="port-ov-cat">Layout</div>
+                <div class="port-ov-title">Magazine<br />Editorial</div>
+              </div>
+            </div>
+            <div class="port-meta">
+              <div class="port-meta-cat">Layout Design</div>
+              <div class="port-meta-title">Magazine Editorial</div>
+            </div>
+          </div>
+          <div class="port-card">
+            <div class="port-thumb">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="300" fill="#f2f1ee" />
+                <polygon
+                  points="200,30 370,270 30,270"
+                  fill="none"
+                  stroke="#d0d0d0"
+                  stroke-width="2"
+                />
+                <polygon
+                  points="200,70 330,250 70,250"
+                  fill="none"
+                  stroke="#e0e0e0"
+                  stroke-width="1.5"
+                />
+                <polygon points="200,110 290,230 110,230" fill="#2d2d2d" />
+                <polygon points="200,140 260,210 140,210" fill="white" />
+                <circle cx="200" cy="170" r="14" fill="#e63e2b" />
+              </svg>
+              <div class="port-overlay">
+                <div class="port-ov-cat">Branding</div>
+                <div class="port-ov-title">Visual Identity<br />System</div>
+              </div>
+            </div>
+            <div class="port-meta">
+              <div class="port-meta-cat">Branding</div>
+              <div class="port-meta-title">Visual Identity System</div>
+            </div>
+          </div>
+          <div class="port-card">
+            <div class="port-thumb">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="300" fill="#f5f5f5" />
+                <rect
+                  x="140"
+                  y="20"
+                  width="120"
+                  height="210"
+                  rx="14"
+                  fill="white"
+                  stroke="#e0e0e0"
+                  stroke-width="1.5"
+                />
+                <rect
+                  x="152"
+                  y="36"
+                  width="96"
+                  height="178"
+                  rx="6"
+                  fill="#f8f8f8"
+                />
+                <rect
+                  x="162"
+                  y="48"
+                  width="76"
+                  height="46"
+                  rx="3"
+                  fill="#eeeeee"
+                />
+                <rect
+                  x="162"
+                  y="104"
+                  width="50"
+                  height="10"
+                  rx="2"
+                  fill="#e0e0e0"
+                />
+                <rect
+                  x="162"
+                  y="122"
+                  width="68"
+                  height="10"
+                  rx="2"
+                  fill="#eee"
+                />
+                <rect
+                  x="162"
+                  y="148"
+                  width="60"
+                  height="22"
+                  rx="3"
+                  fill="#2d2d2d"
+                />
+              </svg>
+              <div class="port-overlay">
+                <div class="port-ov-cat">Mobile UI</div>
+                <div class="port-ov-title">App Design<br />&amp; Prototype</div>
+              </div>
+            </div>
+            <div class="port-meta">
+              <div class="port-meta-cat">Mobile UI</div>
+              <div class="port-meta-title">App Design &amp; Prototype</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES & SKILLS -->
+    <section id="services">
+      <div class="container">
+        <div class="services-layout">
+          <div class="reveal">
+            <div class="section-label">Skills</div>
+            <h2 class="sec-title">What I<br />Know</h2>
+            <div class="skills-list">
+              <div class="sk-item">
+                <div class="sk-top">
+                  <span class="sk-name">WordPress / CMS</span
+                  ><span class="sk-pct">90%</span>
+                </div>
+                <div class="sk-track">
+                  <div class="sk-fill" data-w="90"></div>
+                </div>
+              </div>
+              <div class="sk-item">
+                <div class="sk-top">
+                  <span class="sk-name">HTML &amp; CSS</span
+                  ><span class="sk-pct">95%</span>
+                </div>
+                <div class="sk-track">
+                  <div class="sk-fill" data-w="95"></div>
+                </div>
+              </div>
+              <div class="sk-item">
+                <div class="sk-top">
+                  <span class="sk-name">JavaScript</span
+                  ><span class="sk-pct">82%</span>
+                </div>
+                <div class="sk-track">
+                  <div class="sk-fill" data-w="82"></div>
+                </div>
+              </div>
+              <div class="sk-item">
+                <div class="sk-top">
+                  <span class="sk-name">Figma / UI Design</span
+                  ><span class="sk-pct">88%</span>
+                </div>
+                <div class="sk-track">
+                  <div class="sk-fill" data-w="88"></div>
+                </div>
+              </div>
+              <div class="sk-item">
+                <div class="sk-top">
+                  <span class="sk-name">Adobe Photoshop</span
+                  ><span class="sk-pct">93%</span>
+                </div>
+                <div class="sk-track">
+                  <div class="sk-fill" data-w="93"></div>
+                </div>
+              </div>
+              <div class="sk-item">
+                <div class="sk-top">
+                  <span class="sk-name">Adobe Illustrator</span
+                  ><span class="sk-pct">87%</span>
+                </div>
+                <div class="sk-track">
+                  <div class="sk-fill" data-w="87"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reveal" style="transition-delay: 0.15s">
+            <div class="section-label">Services</div>
+            <h2 class="sec-title">What I<br />Do</h2>
+            <div class="svc-list">
+              <div class="svc-item">
+                <div class="svc-num">01</div>
+                <div class="svc-info">
+                  <div class="svc-name">UI / UX Design</div>
+                  <div class="svc-desc">
+                    Intuitive interfaces &amp; seamless experiences across all
+                    platforms.
+                  </div>
+                </div>
+              </div>
+              <div class="svc-item">
+                <div class="svc-num">02</div>
+                <div class="svc-info">
+                  <div class="svc-name">Web Development</div>
+                  <div class="svc-desc">
+                    Fast, responsive websites built with modern best practices.
+                  </div>
+                </div>
+              </div>
+              <div class="svc-item">
+                <div class="svc-num">03</div>
+                <div class="svc-info">
+                  <div class="svc-name">Brand Identity</div>
+                  <div class="svc-desc">
+                    Cohesive visual systems — logos, colors, typography.
+                  </div>
+                </div>
+              </div>
+              <div class="svc-item">
+                <div class="svc-num">04</div>
+                <div class="svc-info">
+                  <div class="svc-name">Print Design</div>
+                  <div class="svc-desc">
+                    Brochures, posters &amp; editorial designed with precision.
+                  </div>
+                </div>
+              </div>
+              <div class="svc-item">
+                <div class="svc-num">05</div>
+                <div class="svc-info">
+                  <div class="svc-name">Social Media</div>
+                  <div class="svc-desc">
+                    Consistent, on-brand content across all digital channels.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="reveal">
+            <div class="section-label">Contact</div>
+            <h2 class="sec-title">Let's Work<br />Together</h2>
+            <p class="contact-body">
+              Have a project in mind or just want to say hello? I'd love to hear
+              from you. Fill out the form and I'll reply via WhatsApp as soon as
+              possible.
+            </p>
+            <div class="c-detail">
+              <div class="c-icon">✉</div>
+              <div>
+                <div class="c-label">Email</div>
+                <div class="c-val">hello@rubrash.com</div>
+              </div>
+            </div>
+            <div class="c-detail">
+              <div class="c-icon">☎</div>
+              <div>
+                <div class="c-label">WhatsApp</div>
+                <div class="c-val">+62 895-353-319-600</div>
+              </div>
+            </div>
+            <div class="c-detail">
+              <div class="c-icon">⌖</div>
+              <div>
+                <div class="c-label">Location</div>
+                <div class="c-val">Indonesia</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal" style="transition-delay: 0.15s">
+            <div class="form-wrap">
+              <div class="f-title">Send a Message</div>
+              <div id="form-notice" class="form-notice"></div>
+              <form id="contact-form" onsubmit="handleWhatsApp(event)">
+                <div class="f-row">
+                  <div class="f-group">
+                    <label for="first_name">First Name</label>
+                    <input
+                      type="text"
+                      id="first_name"
+                      placeholder="John"
+                      required
+                    />
+                  </div>
+                  <div class="f-group">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" placeholder="Doe" />
+                  </div>
+                </div>
+                <div class="f-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="john@email.com"
+                    required
+                  />
+                </div>
+                <div class="f-group">
+                  <label for="subject">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    placeholder="Project Inquiry"
+                  />
+                </div>
+                <div class="f-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    placeholder="Tell me about your project..."
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-wa">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                    />
+                  </svg>
+                  Kirim via WhatsApp
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">·Ru<span>br</span>ash·</div>
+      <p>© 2026 Axenatorz. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Behance</a>
+        <a href="#">Dribbble</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
