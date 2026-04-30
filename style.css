@@ -622,6 +622,8 @@ h2.sec-title {
   display: flex;
   flex-direction: column;
   gap: 22px;
+  background-color: rgb(99, 99, 99);
+  padding: 20px;
 }
 .sk-top {
   display: flex;
@@ -652,12 +654,13 @@ h2.sec-title {
   margin-top: 36px;
 }
 .svc-item {
-  padding: 20px 0;
+  padding: 9px 20px;
   border-bottom: 1px solid var(--light-gray);
   display: flex;
   align-items: flex-start;
   gap: 20px;
   transition: padding-left 0.3s;
+  background-color: rgb(99, 99, 99);
 }
 .svc-item:hover {
   padding-left: 8px;
@@ -666,7 +669,7 @@ h2.sec-title {
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
   font-weight: 800;
-  color: var(--light-gray);
+  color: black;
   min-width: 34px;
   line-height: 1;
   margin-top: 2px;
@@ -674,11 +677,11 @@ h2.sec-title {
 .svc-name {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--black);
+  color: black;
 }
 .svc-desc {
   font-size: 0.82rem;
-  color: var(--gray);
+  color: white;
   line-height: 1.7;
   margin-top: 3px;
 }
